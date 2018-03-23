@@ -1,11 +1,11 @@
 package kata.bank.project.model.account;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import kata.bank.project.model.operation.Transaction;
-
-import static kata.bank.project.model.account.Account.AccountType.CURRENT;
 
 public abstract class Account {
 
@@ -15,12 +15,12 @@ public abstract class Account {
     }
 
     private AccountType       type;
-    private String            accountNumber;
+    private int               accountNumber;
     private Double            amount;
     private AccountStatement  statement;
     private List<Transaction> operations;
 
-    private class AccountStatement {
+    public class AccountStatement {
 
         private LocalDateTime dateTime;
         private Double        balance; // with transactions awaiting
@@ -48,24 +48,29 @@ public abstract class Account {
         }
     }
 
-    public Account() {
-        this.type = CURRENT;
-    }
-
-    public Account(final AccountType type) {
-        this.type = (type == null) ? CURRENT : type;
-    }
-
     public Account(final AccountType type,
-                   final String accountNumber,
+                   final int accountNumber,
                    final Double amount,
-                   final AccountStatement statement, final List<Transaction> operations) {
+                   final AccountStatement statement,
+                   final List<Transaction> operations) {
         this.type = type;
         this.accountNumber = accountNumber;
         this.amount = amount;
         this.statement = statement;
         this.operations = operations;
     }
+
+    public Account(final AccountType type) {
+        this(
+            type,
+            (new Random()).nextInt(1000000) + 1,
+            0.0,
+            null, // TODO correct statement initialisation
+            new ArrayList<Transaction>(0)
+            );
+    }
+
+    public Account() {}
 
     public AccountType getType() {
         return type;
@@ -75,11 +80,11 @@ public abstract class Account {
         this.type = type;
     }
 
-    public String getAccountNumber() {
+    public int getAccountNumber() {
         return accountNumber;
     }
 
-    public void setAccountNumber(final String accountNumber) {
+    public void setAccountNumber(final int accountNumber) {
         this.accountNumber = accountNumber;
     }
 
@@ -107,6 +112,6 @@ public abstract class Account {
         this.operations = operations;
     }
 
-//    public abstract void makeWithdrawal(final Account account, final Double value);
+    //    public abstract void makeWithdrawal(final Account account, final Double value);
 
 }

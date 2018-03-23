@@ -1,6 +1,10 @@
 package kata.bank.project.model.account;
 
+import java.util.List;
+
 import org.springframework.stereotype.Component;
+
+import kata.bank.project.model.operation.Transaction;
 
 import static kata.bank.project.model.account.Account.AccountType.CURRENT;
 
@@ -11,7 +15,17 @@ public class CurrentAccount extends Account {
     private Double overdraft;
 
     public CurrentAccount() {
-        this.type = CURRENT;
+        super(CURRENT);
+    }
+
+    public CurrentAccount(final AccountType type,
+                          final int accountNumber,
+                          final Double amount,
+                          final AccountStatement statement,
+                          final List<Transaction> operations,
+                          final Double overdraft) {
+        super(type, accountNumber, amount, statement, operations);
+        this.overdraft = overdraft;
     }
 
     @Override
