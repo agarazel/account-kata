@@ -16,6 +16,12 @@ public class CurrentAccount extends Account {
 
     public CurrentAccount() {
         super(CURRENT);
+        this.overdraft = 0.0;
+    }
+
+    public CurrentAccount(Double overdraft) {
+        this();
+        this.overdraft = overdraft;
     }
 
     public CurrentAccount(final AccountType type,

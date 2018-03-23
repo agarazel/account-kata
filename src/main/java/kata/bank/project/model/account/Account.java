@@ -66,7 +66,7 @@ public abstract class Account {
             (new Random()).nextInt(1000000) + 1,
             0.0,
             null, // TODO correct statement initialisation
-            new ArrayList<Transaction>(0)
+            new ArrayList<>(0)
             );
     }
 

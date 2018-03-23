@@ -16,6 +16,12 @@ public class SavingsAccount extends Account {
 
     public SavingsAccount() {
         super(SAVINGS);
+        this.savingRatio = 0.0;
+    }
+
+    public SavingsAccount(Double savingRatio) {
+        this();
+        this.savingRatio = savingRatio;
     }
 
     public SavingsAccount(final AccountType type,
