@@ -11,7 +11,7 @@ import static kata.bank.project.model.account.Account.AccountType.CURRENT;
 @Component
 public class CurrentAccount extends Account {
 
-    private AccountType type;
+    private AccountType type = CURRENT;
     private Double overdraft;
 
     public CurrentAccount() {
@@ -24,13 +24,12 @@ public class CurrentAccount extends Account {
         this.overdraft = overdraft;
     }
 
-    public CurrentAccount(final AccountType type,
-                          final int accountNumber,
+    public CurrentAccount(final int accountNumber,
                           final Double amount,
                           final AccountStatement statement,
                           final List<Transaction> operations,
                           final Double overdraft) {
-        super(type, accountNumber, amount, statement, operations);
+        super(CURRENT, accountNumber, amount, statement, operations);
         this.overdraft = overdraft;
     }
 

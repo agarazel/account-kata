@@ -11,7 +11,7 @@ import static kata.bank.project.model.account.Account.AccountType.SAVINGS;
 @Component
 public class SavingsAccount extends Account {
 
-    private AccountType type;
+    private AccountType type = SAVINGS;
     private Double savingRatio;
 
     public SavingsAccount() {
@@ -24,20 +24,21 @@ public class SavingsAccount extends Account {
         this.savingRatio = savingRatio;
     }
 
-    public SavingsAccount(final AccountType type,
-                          final int accountNumber,
+    public SavingsAccount(final int accountNumber,
                           final Double amount,
                           final AccountStatement statement,
                           final List<Transaction> operations,
                           final Double savingRatio) {
-        super(type, accountNumber, amount, statement, operations);
+        super(SAVINGS, accountNumber, amount, statement, operations);
         this.savingRatio = savingRatio;
     }
 
+    @Override
     public AccountType getType() {
         return type;
     }
 
+    @Override
     public void setType(final AccountType type) {
         this.type = type;
     }
