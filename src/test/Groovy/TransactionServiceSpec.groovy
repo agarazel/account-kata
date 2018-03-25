@@ -34,6 +34,7 @@ class TransactionServiceSpec extends Specification {
         def sum = service.getDepositsAmount(account)
 
         then:
+        println sum
         assert sum == 10350
 
     }
@@ -47,6 +48,7 @@ class TransactionServiceSpec extends Specification {
         def sum = service.getWithdrawalsAmount(account)
 
         then:
+        println sum
         assert sum == 1200
 
     }
@@ -60,7 +62,7 @@ class TransactionServiceSpec extends Specification {
 
         when:
         //        def amount = service.getAmount(account)
-//        def resultList = service.returnTransactionsBeforeNow(account)
+        //        def resultList = service.returnTransactionsBeforeNow(account)
         def countResult = service.returnTransactionsCountAfter(someDateTime, account)
 
         then:
