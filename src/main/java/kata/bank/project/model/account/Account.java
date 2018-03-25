@@ -22,21 +22,32 @@ public abstract class Account {
 
     public class AccountStatement {
 
-        private LocalDateTime dateTime;
+        private LocalDateTime start;
+        private LocalDateTime end;
         private Double        balance; // with transactions awaiting
 
-        public AccountStatement(final LocalDateTime dateTime,
+        public AccountStatement(final LocalDateTime start,
+                                final LocalDateTime end,
                                 final Double balance) {
-            this.dateTime = dateTime;
+            this.start = start;
+            this.end = end;
             this.balance = balance;
         }
 
-        public LocalDateTime getDateTime() {
-            return dateTime;
+        public LocalDateTime getStart() {
+            return start;
         }
 
-        public void setDateTime(final LocalDateTime dateTime) {
-            this.dateTime = dateTime;
+        public void setStart(final LocalDateTime start) {
+            this.start = start;
+        }
+
+        public LocalDateTime getEnd() {
+            return end;
+        }
+
+        public void setEnd(final LocalDateTime end) {
+            this.end = end;
         }
 
         public Double getBalance() {
@@ -110,6 +121,7 @@ public abstract class Account {
 
     public void setOperations(final List<Transaction> operations) {
         this.operations = operations;
+        operations.forEach(o -> amount += o.getAmount());
     }
 
     //    public abstract void makeWithdrawal(final Account account, final Double value);
