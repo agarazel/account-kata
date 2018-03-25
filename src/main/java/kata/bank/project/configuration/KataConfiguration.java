@@ -1,4 +1,4 @@
-package kata.bank.project.Configuration;
+package kata.bank.project.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
