@@ -1,7 +1,6 @@
 package kata.bank.project.service;
 
 import kata.bank.project.model.account.Account;
-import kata.bank.project.model.account.CurrentAccount;
 
 public interface ITransactionService {
 
