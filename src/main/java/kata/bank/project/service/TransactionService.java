@@ -18,6 +18,9 @@ import static kata.bank.project.model.operation.Transaction.TransactionType.WITH
 @Service
 public class TransactionService implements ITransactionService {
 
+    public TransactionService() {
+    }
+
     @Override
     public void makeDeposit(final Account account, final Double value) {
         Transaction transaction = new Transaction(LocalDateTime.now(),
