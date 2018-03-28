@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2de5b05-5455-49ae-9a5d-6994b7277af4" name="Default" comment="corrected some things in accounts constructors">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="f2de5b05-5455-49ae-9a5d-6994b7277af4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -37,7 +36,7 @@
       <file leaf-file-name="AccountSpec.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/Groovy/AccountSpec.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
+            <state relative-caret-position="627">
               <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
@@ -49,31 +48,11 @@
       <file leaf-file-name="AccountServiceSpec.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/Groovy/AccountServiceSpec.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
+            <state relative-caret-position="291">
               <caret line="39" column="30" lean-forward="false" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1584">
-              <caret line="33" column="16" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="groovy_console_2.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console_2.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -100,35 +79,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Deposit.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/kata/bank/project/model/operation/Deposit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SavingsAccount.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/kata/bank/project/model/account/SavingsAccount.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="13" column="39" lean-forward="false" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AccountService.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AccountService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/kata/bank/project/service/AccountService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
+            <state relative-caret-position="611">
               <caret line="43" column="1" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#475#476#0" expanded="true" />
                 <element signature="e#513#514#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IAccountService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kata/bank/project/service/IAccountService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="34" lean-forward="true" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -475,6 +446,7 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console_2.groovy" />
         <option value="$PROJECT_DIR$/src/test/Groovy/AccountServiceSpec.groovy" />
         <option value="$PROJECT_DIR$/src/main/java/kata/bank/project/service/AccountService.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
       </list>
     </option>
   </component>
@@ -980,7 +952,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522274070252</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="WIP">
+      <created>1522274759478</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1522274759478</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1434,16 +1413,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kata/bank/project/service/IAccountService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="34" lean-forward="true" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Groovy/TransactionServiceSpec.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -1508,16 +1477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Groovy/AccountSpec.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console_2.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1542,21 +1501,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kata/bank/project/service/AccountService.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="43" column="1" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+        <state relative-caret-position="-1568">
+          <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
+            <element signature="e#34026#34030#0" expanded="true" />
+            <element signature="e#34036#34040#0" expanded="true" />
+            <element signature="e#34128#34132#0" expanded="true" />
+            <element signature="e#34138#34142#0" expanded="true" />
+            <element signature="e#34164#34168#0" expanded="true" />
+            <element signature="e#34254#34258#0" expanded="true" />
+            <element signature="e#34264#34268#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Groovy/AccountServiceSpec.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
+        <state relative-caret-position="291">
           <caret line="39" column="30" lean-forward="false" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
@@ -1564,11 +1527,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/Groovy/AccountSpec.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1584">
-          <caret line="33" column="16" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="627">
+          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kata/bank/project/service/IAccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="34" lean-forward="true" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kata/bank/project/service/AccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="43" column="1" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+            <element signature="e#513#514#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
