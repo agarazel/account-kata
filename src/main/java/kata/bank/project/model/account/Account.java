@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
 
 import kata.bank.project.model.operation.Transaction;
 
@@ -32,6 +33,19 @@ public abstract class Account {
             this.start = start;
             this.end = end;
             this.balance = balance;
+        }
+
+        private Double buildBalance(final LocalDateTime startDate, final LocalDateTime endDate) {
+            List<Transaction> operationsInBalance = operations.stream()
+                                                              .filter(o -> o.getTransactionDateTime()
+                                                                            .isAfter(startDate)
+                                                                        && o.getTransactionDateTime()
+                                                                            .isBefore(endDate))
+                                                              .collect(Collectors.toList());
+            return operationsInBalance.stream()
+                                      .map(Transaction::getAmount)
+                                      .mapToDouble(Double::doubleValue)
+                                      .sum();
         }
 
         public LocalDateTime getStart() {

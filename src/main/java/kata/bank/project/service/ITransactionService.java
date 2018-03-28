@@ -1,6 +1,10 @@
 package kata.bank.project.service;
 
+import java.time.LocalDateTime;
+import java.util.List;
+
 import kata.bank.project.model.account.Account;
+import kata.bank.project.model.operation.Transaction;
 
 public interface ITransactionService {
 
@@ -8,8 +12,12 @@ public interface ITransactionService {
 
     void makeWithdrawal(final Account account, final Double amount);
 
-    double getDepositsAmount(final Account account);
+    double calculateOperationsAmountInAccount(final Account account);
 
-    double getWithdrawalsAmount(final Account account);
+    double calculateOperationsAmount(final List<Transaction> operations);
+
+    long returnTransactionsCountAfter(final LocalDateTime dateTime, final Account account);
+
+    long returnTransactionsCountBefore(final LocalDateTime dateTime, final Account account);
 
 }
