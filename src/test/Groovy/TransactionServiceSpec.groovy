@@ -49,7 +49,7 @@ class TransactionServiceSpec extends Specification {
 
         then:
         println sum
-        assert sum == 1200
+        assert sum == -1200
 
     }
 
@@ -61,7 +61,6 @@ class TransactionServiceSpec extends Specification {
         account.setOperations(transactions)
 
         when:
-        //        def amount = service.getAmount(account)
         //        def resultList = service.returnTransactionsBeforeNow(account)
         def countResult = service.returnTransactionsCountAfter(someDateTime, account)
 
