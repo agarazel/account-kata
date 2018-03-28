@@ -12,9 +12,10 @@ public interface ITransactionService {
 
     void makeWithdrawal(final Account account, final Double amount);
 
-    double calculateOperationsAmountInAccount(final Account account);
-
     double calculateOperationsAmount(final List<Transaction> operations);
+
+    double getDepositsAmount(final Account account);
+    double getWithdrawalsAmount(final Account account);
 
     long returnTransactionsCountAfter(final LocalDateTime dateTime, final Account account);
 

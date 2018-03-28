@@ -10,6 +10,7 @@ import kata.bank.project.exception.AccountTransactionException;
 import kata.bank.project.model.account.Account;
 import kata.bank.project.model.account.CurrentAccount;
 import kata.bank.project.model.operation.Transaction;
+import kata.bank.project.model.operation.Transaction.TransactionType;
 
 import static kata.bank.project.model.operation.Transaction.TransactionType.DEPOSIT;
 import static kata.bank.project.model.operation.Transaction.TransactionType.WITHDRAWAL;
@@ -65,16 +66,20 @@ public class TransactionService implements ITransactionService {
     }
 
     @Override
-    public double calculateOperationsAmountInAccount(final Account account) {
+    public double getDepositsAmount(final Account account) {
+        return this.returnTotalAmountInAccountByType(DEPOSIT, account);
+    }
+
+    @Override
+    public double getWithdrawalsAmount(final Account account) {
+        return this.returnTotalAmountInAccountByType(WITHDRAWAL, account) * -1;
+    }
+
+    private double returnTotalAmountInAccountByType(final TransactionType transactionType, final Account account) {
         return account.getOperations()
                       .stream()
-                      .map(o -> {
-                          if (WITHDRAWAL.equals(o.getType())) {
-                              return -o.getAmount();
-                          } else {
-                              return o.getAmount();
-                          }
-                      })
+                      .filter(o -> transactionType.equals(o.getType()))
+                      .map(Transaction::getAmount)
                       .mapToDouble(Double::doubleValue)
                       .sum();
     }
