@@ -45,7 +45,7 @@ class AccountServiceSpec extends Specification {
 
     }
 
-    def 'get the balance before now'() {
+    def 'get the balance before some date'() {
 
         given:
         account.operations = transactions
