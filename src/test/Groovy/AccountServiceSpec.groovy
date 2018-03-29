@@ -28,7 +28,7 @@ class AccountServiceSpec extends Specification {
     AccountService service = new AccountService(transactionService)
 
 
-    def 'get the account balance'() {
+    def 'get the account balance between "2018-03-17" and "2018-03-21"'() {
 
         given:
         account.operations = transactions
