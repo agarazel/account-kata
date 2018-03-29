@@ -8,4 +8,5 @@ public interface IAccountService {
 
     Double buildBalance(final Account account, final LocalDateTime start, final LocalDateTime end);
 
+    Double getBalanceBefore(final LocalDateTime dateTime, final Account account);
 }

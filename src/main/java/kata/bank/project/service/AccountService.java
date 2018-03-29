@@ -31,14 +31,28 @@ public class AccountService implements IAccountService {
                                                                     )
                                                                     &&
                                                                     (o.getTransactionDateTime()
-                                                                       .isBefore(end)
-                                                                      ||
-                                                                      o.getTransactionDateTime()
-                                                                       .equals(end)
+                                                                      .isBefore(end)
+                                                                     ||
+                                                                     o.getTransactionDateTime()
+                                                                      .equals(end)
                                                                     )
                                                               )
                                                        .collect(Collectors.toList());
 
         return service.calculateOperationsAmount(operationsInBalance);
+    }
+
+    @Override
+    public Double getBalanceBefore(final LocalDateTime dateTime, final Account account) {
+        return account.getOperations()
+                      .stream()
+                      .filter(o -> o.getTransactionDateTime()
+                                    .isBefore(dateTime)
+                                   ||
+                                   o.getTransactionDateTime()
+                                    .equals(dateTime))
+                      .map(Transaction::getAmount)
+                      .mapToDouble(Double::doubleValue)
+                      .sum();
     }
 }

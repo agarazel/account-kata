@@ -45,4 +45,20 @@ class AccountServiceSpec extends Specification {
 
     }
 
+    def 'get the balance before now'() {
+
+        given:
+        account.operations = transactions
+
+        def someDate = LocalDateTime.parse('2018-03-20T00:00:00')
+
+        when:
+        def balance = service.getBalanceBefore(someDate, account)
+
+        then:
+        println balance
+        assert balance == 10350.0
+
+    }
+
 }
