@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f2de5b05-5455-49ae-9a5d-6994b7277af4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/Groovy/AccountServiceSpec.groovy" afterPath="$PROJECT_DIR$/src/test/Groovy/AccountServiceSpec.groovy" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -638,7 +637,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AccountServiceSpec.get the balance before now">
+  <component name="RunManager" selected="JUnit.AccountServiceSpec.get the balance before some date">
     <configuration name="AccountServiceSpec.get the account balance between &quot;2018-03-17T00:00:00&quot; and &quot;2018-03-21T00:00:00&quot;" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="accountkata" />
@@ -719,15 +718,15 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="TransactionServiceSpec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AccountServiceSpec.get the balance before some date" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="accountkata" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TransactionServiceSpec" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="AccountServiceSpec" />
+      <option name="METHOD_NAME" value="get the balance before some date" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -820,19 +819,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TransactionServiceSpec" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.AccountServiceSpec.get the account balance" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.AccountServiceSpec.get the account balance between &quot;2018-03-17T00:00:00&quot; and &quot;2018-03-21T00:00:00&quot;" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.AccountServiceSpec.get the account balance between &quot;2018-03-17&quot; and &quot;2018-03-21&quot;" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.AccountServiceSpec.get the balance before now" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.AccountServiceSpec.get the account balance" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.AccountServiceSpec.get the account balance between &quot;2018-03-17T00:00:00&quot; and &quot;2018-03-21T00:00:00&quot;" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.AccountServiceSpec.get the account balance between &quot;2018-03-17&quot; and &quot;2018-03-21&quot;" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.AccountServiceSpec.get the balance before now" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.AccountServiceSpec.get the balance before some date" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.AccountServiceSpec.get the balance before now" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.AccountServiceSpec.get the account balance between &quot;2018-03-17&quot; and &quot;2018-03-21&quot;" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.AccountServiceSpec.get the account balance between &quot;2018-03-17T00:00:00&quot; and &quot;2018-03-21T00:00:00&quot;" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.AccountServiceSpec.get the account balance" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TransactionServiceSpec" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.AccountServiceSpec.get the balance before some date" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.AccountServiceSpec.get the balance before now" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.AccountServiceSpec.get the account balance between &quot;2018-03-17&quot; and &quot;2018-03-21&quot;" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.AccountServiceSpec.get the account balance between &quot;2018-03-17T00:00:00&quot; and &quot;2018-03-21T00:00:00&quot;" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.AccountServiceSpec.get the account balance" />
       </list>
     </recent_temporary>
   </component>
@@ -986,7 +985,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522332562126</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="WIP">
+      <created>1522332603817</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1522332603817</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1011,8 +1017,8 @@
     <history-entry file="AccountServiceSpec_get_the_balance_before_now - 2018.03.29 at 16h 08m 27s.xml">
       <configuration name="AccountServiceSpec.get the balance before now" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TransactionServiceSpec_It_should_add_a_new_deposit_if_there_are_no_transactions_in_account - 2018.03.28 at 23h 41m 26s.xml">
-      <configuration name="TransactionServiceSpec.It should add a new deposit if there are no transactions in account" configurationId="JUnit" />
+    <history-entry file="AccountServiceSpec_get_the_balance_before_some_date - 2018.03.29 at 16h 10m 17s.xml">
+      <configuration name="AccountServiceSpec.get the balance before some date" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TransactionServiceSpec_It_should_return_sum_of_the_withdrawals - 2018.03.28 at 23h 30m 18s.xml">
       <configuration name="TransactionServiceSpec.It should return sum of the withdrawals" configurationId="JUnit" />
